@@ -1,0 +1,5 @@
+res://Ball/Ball.tscn
+res://main/main.tscn
+res://title/title.tscn
+res://barriers/Barriers.tscn
+res://Ball/Ball.gd
