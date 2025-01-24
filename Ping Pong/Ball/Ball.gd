@@ -25,8 +25,8 @@ func _physics_process(delta):
 func _on_input_event(_viewport, event, _shape_idx):
 	if event is InputEventMouseButton:
 		if event.button_index == MOUSE_BUTTON_LEFT and event.pressed == true:
-			#gravity_increase += 0.02
-			#print(gravity_increase)
+			gravity_increase += 0.005
+			print(gravity_increase)
 			velocity.y = JUMP_VELOCITY
 			if position.x == event.position.x:
 				velocity.x = randf_range(-1, 1)
