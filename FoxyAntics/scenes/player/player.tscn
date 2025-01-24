@@ -1,7 +1,7 @@
 [gd_scene load_steps=13 format=3 uid="uid://dahlg5ofhbvrr"]
 
 [ext_resource type="Texture2D" uid="uid://ckeue6ltpvjed" path="res://assets/player/player.png" id="1_0m6sp"]
-[ext_resource type="Script" path="res://scenes/player/player.gd" id="1_xulb3"]
+[ext_resource type="Script" path="res://scenes/player/player.gd" id="1_8gush"]
 [ext_resource type="PackedScene" uid="uid://dfx5a3grbyqi5" path="res://scenes/player_cam/player_cam.tscn" id="3_mfkf7"]
 [ext_resource type="PackedScene" uid="uid://b5macvs6j78st" path="res://shooter/shooter.tscn" id="4_5n470"]
 
@@ -123,7 +123,8 @@ size = Vector2(10, 18)
 
 [node name="Player" type="CharacterBody2D" groups=["Moveables", "Player"]]
 collision_layer = 0
-script = ExtResource("1_xulb3")
+input_pickable = true
+script = ExtResource("1_8gush")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_0m6sp")
