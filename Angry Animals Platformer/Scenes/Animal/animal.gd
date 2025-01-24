@@ -83,7 +83,7 @@ func detect_release() -> bool:
 	if _state == ANIMAL_STATE.DRAG:
 		if Input.is_action_just_released("drag") == true:
 			set_new_state(ANIMAL_STATE.RELEASE)
-			arrow.queue_free()
+			#arrow.queue_free()
 			return true
 	return false
 

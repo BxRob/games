@@ -1,6 +1,5 @@
-[gd_scene load_steps=9 format=3 uid="uid://cdtfmwkdkv5n6"]
+[gd_scene load_steps=8 format=3 uid="uid://cdtfmwkdkv5n6"]
 
-[ext_resource type="Script" path="res://Scenes/Level/level.gd" id="1_qppoi"]
 [ext_resource type="Texture2D" uid="uid://018nfk01u874" path="res://assets/scene/colored_castle.png" id="2_24pq3"]
 [ext_resource type="PackedScene" uid="uid://ikvcsm65xb3n" path="res://Scenes/Water/water.tscn" id="3_phfdt"]
 [ext_resource type="PackedScene" uid="uid://cc3pgtee464mr" path="res://Scenes/scorer/scorer.tscn" id="4_cdc1u"]
@@ -10,7 +9,6 @@
 [ext_resource type="PackedScene" uid="uid://bpo1j7ejdpx84" path="res://Scenes/Animal/animal.tscn" id="8_uvb8j"]
 
 [node name="Level" type="Node2D"]
-script = ExtResource("1_qppoi")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 visible = false
