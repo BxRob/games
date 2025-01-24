@@ -1,0 +1,15 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1722522543
+icon.svg::CompressedTexture2D::9039394491600043138::1722202088::1722202093::1::::<><>::
+Table_tennis_ball.png::CompressedTexture2D::5110451271902958994::1722271515::1722271525::1::::<><>::
+::res://scenes/::1722271424
+::res://scenes/ball/::1722446571
+ball.gd::GDScript::-1::1722446468::0::1::::<>RigidBody2D<>::
+ball.tscn::PackedScene::4812487538791273393::1722446571::0::1::::<><>::res://scenes/ball/ball.gd<>uid://ce2snd8tb60pi::::res://Table_tennis_ball.png
+::res://scenes/box/::1722446531
+box.gd::GDScript::-1::1722273935::0::1::::<>Node2D<>::
+box.tscn::PackedScene::6384846459941560717::1722446531::0::1::::<><>::res://scenes/box/box.gd<>uid://c8ek287a6lolq::::res://scenes/wall/wall.tscn
+::res://scenes/main/::1722446531
+main.tscn::PackedScene::7559279944674118136::1722446531::0::1::::<><>::uid://catg74pic0sfx::::res://scenes/ball/ball.tscn<>uid://cw74qusnx4h46::::res://scenes/box/box.tscn
+::res://scenes/wall/::1722446531
+wall.tscn::PackedScene::7097987887566778118::1722446531::0::1::::<><>::

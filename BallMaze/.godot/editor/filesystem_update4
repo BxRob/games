@@ -1,0 +1,6 @@
+res://scenes/box/box.tscn
+res://scenes/box/box.gd
+res://scenes/ball/ball.tscn
+res://scenes/ball/ball.gd
+res://scenes/wall/wall.tscn
+res://scenes/main/main.tscn

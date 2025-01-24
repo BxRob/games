@@ -1,0 +1,14 @@
+AnimationPlayer
+GPUParticles2D
+Node2D
+Timer
+CollisionShape2D
+Sprite2D
+Node
+MarginContainer
+Button
+Label
+VBoxContainer
+PanelContainer
+CanvasLayer
+ProgressBar

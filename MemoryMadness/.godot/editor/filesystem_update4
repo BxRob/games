@@ -1,0 +1,6 @@
+res://scorer/scorer.tscn
+res://scorer/scorer.gd
+res://singletons/signal_manager.gd
+res://memory_tile/memory_tile.gd
+res://game_screen/game_screen.tscn
+res://assets/GM_32_White.tres
