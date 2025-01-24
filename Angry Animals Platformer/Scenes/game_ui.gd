@@ -28,4 +28,4 @@ func update_attempts(attempts: int) -> void:
 
 func on_level_complete() -> void:
 	vb_2.show()
-	game_sound.play()
+	#game_sound.play()

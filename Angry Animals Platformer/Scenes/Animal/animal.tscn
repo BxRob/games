@@ -10,8 +10,7 @@
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_i10uk"]
 bounce = 0.2
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_bma04"]
-size = Vector2(42, 42)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6mb4u"]
 
 [node name="Animal" type="RigidBody2D"]
 input_pickable = true
@@ -23,18 +22,17 @@ max_contacts_reported = 1
 script = ExtResource("1_l5104")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(0.15, 0.15)
+scale = Vector2(0.0813966, 0.0813966)
 texture = ExtResource("1_478to")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("RectangleShape2D_bma04")
+shape = SubResource("RectangleShape2D_6mb4u")
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
 position = Vector2(-1.90735e-06, 1.90735e-06)
 scale = Vector2(2.1, 2.1)
 
 [node name="Label" type="Label" parent="."]
-visible = false
 offset_left = -20.0
 offset_top = -44.0
 offset_right = 20.0
@@ -43,14 +41,17 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "DEBUG"
 
 [node name="Arrow" type="Sprite2D" parent="."]
+visible = false
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("3_rkv7s")
 offset = Vector2(150, 0)
 
 [node name="StretchSound" type="AudioStreamPlayer2D" parent="."]
+visible = false
 stream = ExtResource("4_3asvr")
 
 [node name="LaunchSound" type="AudioStreamPlayer2D" parent="."]
+visible = false
 stream = ExtResource("5_wvm2e")
 
 [node name="KickSound" type="AudioStreamPlayer2D" parent="."]

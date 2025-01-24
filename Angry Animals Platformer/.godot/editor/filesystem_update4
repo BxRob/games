@@ -1,5 +1,14 @@
-res://Scenes/Level/level.tscn
+res://Scenes/platforms/platform.tscn
 res://assets/lg_48_wh.tres
 res://assets/lg_24_wh.tres
 res://assets/lg_96_bl.tres
 res://assets/lg_48_gr.tres
+res://Scenes/Level/platformLevel.tscn
+res://Scenes/level_button/level_button.tscn
+res://Scenes/Level/level.tscn
+res://Scenes/scorer/scorer.tscn
+res://Scenes/cup/cup.tscn
+res://Scenes/main/main.tscn
+res://Scenes/Animal/animal.tscn
+res://Scenes/Animal/animal.gd
+res://Scenes/Water/water.gd

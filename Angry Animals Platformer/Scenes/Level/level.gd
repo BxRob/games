@@ -9,7 +9,7 @@ const MAIN = preload("res://Scenes/main/main.tscn")
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	add_animal()
+	#add_animal()
 	SignalManager.on_animal_died.connect(add_animal)
 
 

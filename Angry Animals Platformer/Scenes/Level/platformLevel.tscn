@@ -1,0 +1,55 @@
+[gd_scene load_steps=9 format=3 uid="uid://cdtfmwkdkv5n6"]
+
+[ext_resource type="Script" path="res://Scenes/Level/level.gd" id="1_qppoi"]
+[ext_resource type="Texture2D" uid="uid://018nfk01u874" path="res://assets/scene/colored_castle.png" id="2_24pq3"]
+[ext_resource type="PackedScene" uid="uid://ikvcsm65xb3n" path="res://Scenes/Water/water.tscn" id="3_phfdt"]
+[ext_resource type="PackedScene" uid="uid://cc3pgtee464mr" path="res://Scenes/scorer/scorer.tscn" id="4_cdc1u"]
+[ext_resource type="PackedScene" uid="uid://6ud8cr05ndxt" path="res://Scenes/game_ui.tscn" id="5_3j8rn"]
+[ext_resource type="PackedScene" uid="uid://b7jl6q3fk52x4" path="res://Scenes/launch_area/launch_area.tscn" id="6_mptyl"]
+[ext_resource type="PackedScene" uid="uid://uuvpnq54oijn" path="res://Scenes/platforms/platform.tscn" id="7_i8vuu"]
+[ext_resource type="PackedScene" uid="uid://bpo1j7ejdpx84" path="res://Scenes/Animal/animal.tscn" id="8_uvb8j"]
+
+[node name="Level" type="Node2D"]
+script = ExtResource("1_qppoi")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(585, 314)
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("2_24pq3")
+
+[node name="AnimalStart" type="Marker2D" parent="."]
+visible = false
+position = Vector2(144, 337)
+scale = Vector2(1.2, 1.2)
+
+[node name="Water" parent="." instance=ExtResource("3_phfdt")]
+visible = false
+z_index = 1
+position = Vector2(0, 621)
+
+[node name="Scorer" parent="." instance=ExtResource("4_cdc1u")]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+visible = false
+
+[node name="GameUi" parent="CanvasLayer" instance=ExtResource("5_3j8rn")]
+
+[node name="LaunchArea" parent="." instance=ExtResource("6_mptyl")]
+visible = false
+position = Vector2(61, 375)
+
+[node name="Platform" parent="." instance=ExtResource("7_i8vuu")]
+position = Vector2(127, 432)
+
+[node name="Platform2" parent="." instance=ExtResource("7_i8vuu")]
+position = Vector2(359, 330)
+
+[node name="Platform3" parent="." instance=ExtResource("7_i8vuu")]
+position = Vector2(581, 254)
+
+[node name="Platform4" parent="." instance=ExtResource("7_i8vuu")]
+position = Vector2(830, 161)
+
+[node name="Animal" parent="." instance=ExtResource("8_uvb8j")]
+position = Vector2(135, 357)

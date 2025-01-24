@@ -1,9 +1,10 @@
+res://Scenes/Level
+res://Scenes/platforms
 res://Scenes/launch_area
 res://Scenes
 res://assets
 res://Scenes/scorer
 res://singletons
-res://Scenes/Level
 res://Scenes/main
 res://Scenes/level_button
 res://Scenes/cup

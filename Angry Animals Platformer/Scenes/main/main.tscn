@@ -1,9 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://b1dnqlxwowwuc"]
+[gd_scene load_steps=4 format=3 uid="uid://b1dnqlxwowwuc"]
 
 [ext_resource type="Texture2D" uid="uid://dffrxxblbllc8" path="res://assets/env/MainBG.png" id="1_x28wo"]
 [ext_resource type="PackedScene" uid="uid://dgj7g85yi6pyx" path="res://Scenes/level_button/level_button.tscn" id="2_setwv"]
 [ext_resource type="LabelSettings" uid="uid://c37avos75gvf" path="res://assets/lg_96_bl.tres" id="3_lwdu1"]
-[ext_resource type="AudioStream" uid="uid://kscl3mwl5pui" path="res://assets/audio/birdsong.wav" id="4_hjwql"]
 
 [node name="Main" type="Control"]
 layout_mode = 3
@@ -69,7 +68,3 @@ layout_mode = 2
 size_flags_vertical = 0
 text = "Angry Animals"
 label_settings = ExtResource("3_lwdu1")
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("4_hjwql")
-autoplay = true

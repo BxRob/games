@@ -17,6 +17,8 @@ var _last_collision_count: int = 0
 
 var _state: ANIMAL_STATE = ANIMAL_STATE.READY
 
+var _first_pull: bool = true
+
 @onready var stretch_sound = $StretchSound
 @onready var label = $Label
 @onready var arrow = $Arrow
@@ -36,6 +38,8 @@ func _physics_process(delta):
 	update(delta)
 	label.text = "%s\n" % ANIMAL_STATE.keys()[_state]
 	label.text += "%.1f,%.1f" % [_dragged_vector.x, _dragged_vector.y]
+	angular_velocity = 0
+	set_ready()
 
 
 func get_impulse() -> Vector2:
@@ -48,22 +52,23 @@ func update_drag() -> void:
 	
 	var gmp = get_global_mouse_position()
 	_dragged_vector = get_dragged_vector(gmp)
-	play_strech_sound()
+	#play_strech_sound()
 	drag_in_limits()
 	scale_arrow()
 
 
 func set_drag() -> void:
 	_drag_start = get_global_mouse_position()
-	arrow.show()
+	#arrow.show()
 
 
 func set_release() -> void:
-	arrow.show()
+	#arrow.show()
 	freeze = false
 	apply_central_impulse(get_impulse())
-	launch_sound.play()
+	#launch_sound.play()
 	SignalManager.on_attempt_made.emit()
+	_first_pull = false
 
 
 func set_new_state(new_state: ANIMAL_STATE) -> void:
@@ -87,9 +92,9 @@ func scale_arrow() -> void:
 	var imp_len = get_impulse().length()
 	var perc = imp_len / IMPULSE_MAX
 	
-	arrow.scale.x = (_arrow_scale_x * perc) + _arrow_scale_x
+	#arrow.scale.x = (_arrow_scale_x * perc) + _arrow_scale_x
 	
-	arrow.rotation = (_start - position).angle()
+	#arrow.rotation = (_start - position).angle()
 
 
 func play_strech_sound() -> void:
@@ -144,6 +149,11 @@ func die() -> void:
 	queue_free()
 
 
+func set_ready() -> void:
+	if linear_velocity.length() == 0 and _first_pull == false:
+		set_new_state(ANIMAL_STATE.READY)
+
+
 func _on_screen_exited():
 	die()
 	
@@ -156,6 +166,6 @@ func _on_input_event(_viewport, event: InputEvent, _shape_idx):
 func _on_sleeping_state_changed():
 	if sleeping == true:
 		var cb = get_colliding_bodies()
-		if cb.size() > 0:
-			cb[0].die()
-		call_deferred("die")
+		#if cb.size() > 0:
+			#cb[0].die()
+		#call_deferred("die")

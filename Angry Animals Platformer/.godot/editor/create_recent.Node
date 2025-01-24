@@ -1,6 +1,10 @@
+RigidBody2D
+CharacterBody2D
 Sprite2D
 CollisionShape2D
 StaticBody2D
+TileMapLayer
+TileMap
 CanvasLayer
 AudioStreamPlayer
 Label
@@ -9,6 +13,3 @@ MarginContainer
 Node
 HBoxContainer
 TextureButton
-TextureRect
-AnimationPlayer
-AudioStreamPlayer2D

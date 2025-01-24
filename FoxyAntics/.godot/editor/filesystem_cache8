@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1737744278
+::res://::1737748612
 icon.png::CompressedTexture2D::2484688780969781089::1723122548::1735576871::1::::<><>::
 ::res://assets/::1736807265
 ::res://assets/backgrounds/::1735576873
@@ -123,9 +123,9 @@ bullet_player.tscn::PackedScene::6929385701371189914::1737499721::0::1::::<><>::
 ::res://scenes/level_base/::1737744266
 level_base.gd::GDScript::-1::1737498720::0::1::::<>Node2D<>::
 level_base.tscn::PackedScene::9164477661556623326::1737744266::0::1::::<><>::uid://dqbcnp0632ej1::::res://assets/tiles/Terrain (16x16).png<>res://scenes/level_base/level_base.gd<>uid://dahlg5ofhbvrr::::res://scenes/player/player.tscn<>uid://88sb18sua61m::::res://object_maker/object_maker.tscn
-::res://scenes/player/::1737744095
+::res://scenes/player/::1737745164
 player.gd::GDScript::-1::1737584812::0::1::::Player<>CharacterBody2D<>::
-player.tscn::PackedScene::7174392894605943871::1737744095::0::1::::<><>::uid://ckeue6ltpvjed::::res://assets/player/player.png<>res://scenes/player/player.gd<>uid://dfx5a3grbyqi5::::res://scenes/player_cam/player_cam.tscn<>uid://b5macvs6j78st::::res://shooter/shooter.tscn
+player.tscn::PackedScene::7174392894605943871::1737745164::0::1::::<><>::uid://ckeue6ltpvjed::::res://assets/player/player.png<>res://scenes/player/player.gd<>uid://dfx5a3grbyqi5::::res://scenes/player_cam/player_cam.tscn<>uid://b5macvs6j78st::::res://shooter/shooter.tscn
 ::res://scenes/player_cam/::1737498722
 player_cam.tscn::PackedScene::7559509948093165022::1737498722::0::1::::<><>::
 ::res://shooter/::1737744095

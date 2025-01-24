@@ -16,6 +16,7 @@ scale = Vector2(1.2, 1.2)
 texture = ExtResource("1_j3oy7")
 
 [node name="AnimalStart" type="Marker2D" parent="."]
+visible = false
 position = Vector2(144, 337)
 scale = Vector2(1.2, 1.2)
 
