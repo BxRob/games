@@ -1,0 +1,67 @@
+[gd_scene load_steps=4 format=3 uid="uid://cv5w7rnheamko"]
+
+[ext_resource type="Script" path="res://title/title.gd" id="1_jo57g"]
+[ext_resource type="Texture2D" uid="uid://dgljd5c8lpexx" path="res://Ball/Table_tennis_ball.png" id="2_dayj5"]
+[ext_resource type="LabelSettings" uid="uid://exm44fk2s6k" path="res://score_font.tres" id="3_4q4ge"]
+
+[node name="TitleScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_jo57g")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = 32
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_bottom = 32
+
+[node name="Title" type="Label" parent="MarginContainer"]
+layout_mode = 2
+size_flags_vertical = 0
+text = "Ping Pong"
+label_settings = ExtResource("3_4q4ge")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Click" type="Label" parent="MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Click to Play"
+label_settings = ExtResource("3_4q4ge")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label" type="Label" parent="MarginContainer"]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 8
+text = "High Score: "
+vertical_alignment = 1
+
+[node name="TableTennisBall" type="Sprite2D" parent="."]
+position = Vector2(240, 216)
+scale = Vector2(0.11, 0.11)
+texture = ExtResource("2_dayj5")
+
+[node name="HighScore" type="Label" parent="." groups=["Persist"]]
+layout_mode = 2
+offset_left = 1.0
+offset_top = 193.0
+offset_right = 480.0
+offset_bottom = 238.0
+size_flags_horizontal = 8
+size_flags_vertical = 8
+text = "0"
+label_settings = ExtResource("3_4q4ge")
+horizontal_alignment = 1

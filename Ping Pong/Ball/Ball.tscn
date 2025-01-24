@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=3 uid="uid://vkglwkoy2dq6"]
+
+[ext_resource type="Texture2D" uid="uid://dgljd5c8lpexx" path="res://Ball/Table_tennis_ball.png" id="1_cfo3g"]
+[ext_resource type="Script" path="res://Ball/Ball.gd" id="1_wwjen"]
+[ext_resource type="AudioStream" uid="uid://cr5khdp6042s8" path="res://pingPongBall.mp3" id="3_xqxba"]
+[ext_resource type="LabelSettings" uid="uid://exm44fk2s6k" path="res://score_font.tres" id="4_cjjed"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_lig7l"]
+radius = 19.0
+
+[node name="PingPongBall" type="CharacterBody2D"]
+input_pickable = true
+script = ExtResource("1_wwjen")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-3.8147e-06, 3.8147e-06)
+scale = Vector2(0.11, 0.11)
+texture = ExtResource("1_cfo3g")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(3.16, 3.16)
+shape = SubResource("CircleShape2D_lig7l")
+
+[node name="BallSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_xqxba")
+
+[node name="Score" type="Label" parent="."]
+offset_left = -240.0
+offset_top = -23.0
+offset_right = 241.0
+offset_bottom = 22.0
+size_flags_vertical = 0
+text = "0"
+label_settings = ExtResource("4_cjjed")
+horizontal_alignment = 1
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]

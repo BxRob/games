@@ -1,0 +1,13 @@
+CharacterBody2D
+RigidBody2D
+StaticBody2D
+Label
+MarginContainer
+CollisionShape2D
+Area2D
+Node2D
+AudioStreamPlayer2D
+Timer
+CanvasLayer
+Camera2D
+Sprite2D
