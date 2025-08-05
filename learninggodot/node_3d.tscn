@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://ucee0gmm3ehy"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_fudoc"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_b66b6"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.73205, 1, 0, -1, 1.73205, 0, 0, 0, 2, -3, 1, 2)
+mesh = SubResource("BoxMesh_fudoc")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.348, 0.137, -1.497)
+mesh = SubResource("CylinderMesh_b66b6")

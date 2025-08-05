@@ -14,6 +14,7 @@ func _ready():
 
 
 func add_animal() -> void:
-	var animal := ANIMAL.instantiate()
-	animal.position = animal_start.position
-	add_child(animal)
+	pass
+	#var animal := ANIMAL.instantiate()
+	#animal.position = animal_start.position
+	#add_child(animal)

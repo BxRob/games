@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://dmfadh3to7hhs"]
+
+[node name="EnemyBase" type="CharacterBody2D"]
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+
+[node name="HitBox" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HitBox"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]

@@ -1,7 +1,7 @@
 [gd_scene load_steps=13 format=3 uid="uid://dahlg5ofhbvrr"]
 
 [ext_resource type="Texture2D" uid="uid://ckeue6ltpvjed" path="res://assets/player/player.png" id="1_0m6sp"]
-[ext_resource type="Script" path="res://scenes/player/player.gd" id="1_8gush"]
+[ext_resource type="Script" uid="uid://bqkk82go572tp" path="res://scenes/player/player.gd" id="1_8gush"]
 [ext_resource type="PackedScene" uid="uid://dfx5a3grbyqi5" path="res://scenes/player_cam/player_cam.tscn" id="3_mfkf7"]
 [ext_resource type="PackedScene" uid="uid://b5macvs6j78st" path="res://shooter/shooter.tscn" id="4_5n470"]
 
@@ -110,12 +110,12 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_cyuhn"]
 _data = {
-"RESET": SubResource("Animation_4i8yx"),
-"fall": SubResource("Animation_ejohh"),
-"hurt": SubResource("Animation_ffbp8"),
-"idle": SubResource("Animation_t7wnb"),
-"jump": SubResource("Animation_76bvd"),
-"run": SubResource("Animation_uiutw")
+&"RESET": SubResource("Animation_4i8yx"),
+&"fall": SubResource("Animation_ejohh"),
+&"hurt": SubResource("Animation_ffbp8"),
+&"idle": SubResource("Animation_t7wnb"),
+&"jump": SubResource("Animation_76bvd"),
+&"run": SubResource("Animation_uiutw")
 }
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hesdw"]

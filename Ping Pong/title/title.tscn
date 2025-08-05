@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://cv5w7rnheamko"]
 
-[ext_resource type="Script" path="res://title/title.gd" id="1_jo57g"]
+[ext_resource type="Script" uid="uid://dsjyymyxdubfw" path="res://title/title.gd" id="1_jo57g"]
 [ext_resource type="Texture2D" uid="uid://dgljd5c8lpexx" path="res://Ball/Table_tennis_ball.png" id="2_dayj5"]
 [ext_resource type="LabelSettings" uid="uid://exm44fk2s6k" path="res://score_font.tres" id="3_4q4ge"]
 

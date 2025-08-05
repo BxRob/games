@@ -1,0 +1,5 @@
+res://player/player.tscn
+res://mob/mob.tscn
+res://main/main.tscn
+res://hud/hud.tscn
+res://main/main.gd
