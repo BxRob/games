@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=3 uid="uid://c74nw4yqx84xj"]
+
+[ext_resource type="PackedScene" uid="uid://iyhqmirgf5nd" path="res://food.tscn" id="1_81i80"]
+[ext_resource type="Texture2D" uid="uid://dfsohyagwk5es" path="res://ramen.png" id="2_psxjj"]
+[ext_resource type="AudioStream" uid="uid://dhlwe5ct2l2pp" path="res://Open Your Mouth.mp3" id="3_cuq87"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_cuq87"]
+radius = 109.0
+height = 266.0
+
+[node name="Ramen" instance=ExtResource("1_81i80")]
+scale = Vector2(0.25, 0.25)
+eat_sound = ExtResource("3_cuq87")
+
+[node name="Sprite2D" parent="." index="0"]
+texture = ExtResource("2_psxjj")
+
+[node name="CollisionShape2D" parent="." index="1"]
+position = Vector2(-2, 17)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_cuq87")

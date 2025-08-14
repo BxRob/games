@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://b4n5p8x2gbvn8"]
 
 [ext_resource type="PackedScene" uid="uid://vkglwkoy2dq6" path="res://Ball/Ball.tscn" id="1_0dd6g"]
-[ext_resource type="Script" path="res://main/main.gd" id="1_vu0md"]
+[ext_resource type="Script" uid="uid://c8bbvuiaplp61" path="res://main/main.gd" id="1_vu0md"]
 [ext_resource type="PackedScene" uid="uid://csst7p1gtkdmk" path="res://barriers/Barriers.tscn" id="2_4k3ie"]
 
 [node name="Main" type="Node2D"]

@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://csst7p1gtkdmk"]
 
-[ext_resource type="Script" path="res://barriers/barriers.gd" id="1_r725g"]
+[ext_resource type="Script" uid="uid://dr7rxhapg8yp0" path="res://barriers/barriers.gd" id="1_r725g"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bl0oo"]
 size = Vector2(51.6569, 37)

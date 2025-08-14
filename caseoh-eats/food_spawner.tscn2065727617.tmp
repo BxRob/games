@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://dqh5n6msdvjqh"]
+
+[ext_resource type="Script" uid="uid://ic201s34abwi" path="res://food_spawner.gd" id="1_5cchq"]
+[ext_resource type="PackedScene" uid="uid://c74nw4yqx84xj" path="res://ramen.tscn" id="2_b46ny"]
+
+[node name="FoodSpawner" type="Node2D"]
+script = ExtResource("1_5cchq")
+food_scenes = Array[PackedScene]([ExtResource("2_b46ny")])
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true

@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://vkglwkoy2dq6"]
 
 [ext_resource type="Texture2D" uid="uid://dgljd5c8lpexx" path="res://Ball/Table_tennis_ball.png" id="1_cfo3g"]
-[ext_resource type="Script" path="res://Ball/Ball.gd" id="1_wwjen"]
+[ext_resource type="Script" uid="uid://470o026f84wn" path="res://Ball/Ball.gd" id="1_wwjen"]
 [ext_resource type="AudioStream" uid="uid://cr5khdp6042s8" path="res://pingPongBall.mp3" id="3_xqxba"]
 [ext_resource type="LabelSettings" uid="uid://exm44fk2s6k" path="res://score_font.tres" id="4_cjjed"]
 

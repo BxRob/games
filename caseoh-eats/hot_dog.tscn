@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://c48xbmgyu8gg4"]
+
+[ext_resource type="PackedScene" uid="uid://iyhqmirgf5nd" path="res://food.tscn" id="1_xx7m3"]
+[ext_resource type="AudioStream" uid="uid://cc23176tsi6s3" path="res://Hot dog baby.mp3" id="2_lkyla"]
+
+[node name="Hot Dog" instance=ExtResource("1_xx7m3")]
+food_type = "Good"
+eat_sound = ExtResource("2_lkyla")
