@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=4 uid="uid://d3tluxaj5rp2e"]
 
 [ext_resource type="Texture2D" uid="uid://dqbcnp0632ej1" path="res://assets/tiles/Terrain (16x16).png" id="1_ae6ku"]
-[ext_resource type="Script" path="res://scenes/level_base/level_base.gd" id="1_cl8pl"]
+[ext_resource type="Script" uid="uid://b7m4j5iq0syj4" path="res://scenes/level_base/level_base.gd" id="1_cl8pl"]
 [ext_resource type="PackedScene" uid="uid://dahlg5ofhbvrr" path="res://scenes/player/player.tscn" id="2_5nlnd"]
 [ext_resource type="PackedScene" uid="uid://88sb18sua61m" path="res://object_maker/object_maker.tscn" id="3_vcfyy"]
 

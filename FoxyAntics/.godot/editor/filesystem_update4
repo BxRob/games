@@ -1,0 +1,8 @@
+res://object_maker/object_maker.tscn
+res://scenes/bullet_base/bullet_base.tscn
+res://scenes/bullet_base/bullet_enemy.tscn
+res://scenes/bullet_base/bullet_player.tscn
+res://scenes/level_base/level_base.tscn
+res://scenes/player/player.tscn
+res://scenes/player_cam/player_cam.tscn
+res://shooter/shooter.tscn
