@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://bpd2quwp22d6g"]
 
-[ext_resource type="PackedScene" uid="uid://b3xosf2k1sx18" path="res://scenes/players/player_well_rounded.tscn" id="1_ey5rb"]
+[ext_resource type="PackedScene" uid="uid://b3xosf2k1sx18" path="res://scenes/unit/players/player_well_rounded.tscn" id="1_ey5rb"]
 [ext_resource type="Resource" uid="uid://c1ai5fok6rh3n" path="res://resources/units/players/stats_player_brawler.tres" id="2_47lan"]
 [ext_resource type="Texture2D" uid="uid://dpxw8tsbgrfse" path="res://assets/sprites/Players/Player_2.png" id="2_u0miy"]
 

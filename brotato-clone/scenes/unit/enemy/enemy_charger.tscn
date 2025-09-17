@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://b5tk8323ema2p"]
 
-[ext_resource type="PackedScene" uid="uid://b6hsdntxjua2k" path="res://scenes/enemy/enemy_chaser_slow.tscn" id="1_1axsv"]
+[ext_resource type="PackedScene" uid="uid://b6hsdntxjua2k" path="res://scenes/unit/enemy/enemy_chaser_slow.tscn" id="1_1axsv"]
 [ext_resource type="Texture2D" uid="uid://emsi6ifyt0vf" path="res://assets/sprites/Enemies/Enemy_5.png" id="2_54bed"]
 [ext_resource type="Resource" uid="uid://cvi0gej7k8i3d" path="res://resources/units/enemies/stats_enemy_charger.tres" id="2_mm3bj"]
 

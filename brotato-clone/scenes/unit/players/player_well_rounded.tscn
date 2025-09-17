@@ -1,10 +1,10 @@
 [gd_scene load_steps=8 format=3 uid="uid://b3xosf2k1sx18"]
 
 [ext_resource type="PackedScene" uid="uid://dme6yx2d3s2g2" path="res://scenes/unit/unit.tscn" id="1_iafer"]
-[ext_resource type="Script" uid="uid://dgfjgpdjxcfuy" path="res://scenes/players/player.gd" id="2_tfyga"]
+[ext_resource type="Script" uid="uid://dgfjgpdjxcfuy" path="res://scenes/unit/players/player.gd" id="2_tfyga"]
 [ext_resource type="Resource" uid="uid://btsb2a3ltuc0i" path="res://resources/units/players/stats_player_well_rounded.tres" id="3_ocm74"]
 [ext_resource type="Texture2D" uid="uid://cproxhccob85g" path="res://assets/sprites/Players/Player_1.png" id="3_tfyga"]
-[ext_resource type="Script" uid="uid://cnh6ms8v4cuf3" path="res://scenes/players/trail.gd" id="4_8jcil"]
+[ext_resource type="Script" uid="uid://cnh6ms8v4cuf3" path="res://scenes/unit/players/trail.gd" id="4_8jcil"]
 
 [sub_resource type="Curve" id="Curve_8jcil"]
 _data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]

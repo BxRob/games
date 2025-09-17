@@ -13,7 +13,7 @@ config_version=5
 config/name="Brotato Clone"
 run/main_scene="uid://b0b00kiv763rm"
 config/features=PackedStringArray("4.5", "Mobile")
-config/icon="res://icon.svg"
+config/icon="uid://cproxhccob85g"
 
 [autoload]
 

@@ -1,11 +1,11 @@
 [gd_scene load_steps=7 format=3 uid="uid://b0b00kiv763rm"]
 
-[ext_resource type="Script" uid="uid://b3vqunqj0xu3m" path="res://scenes/Arena/arena.gd" id="1_bydfj"]
+[ext_resource type="Script" uid="uid://b3vqunqj0xu3m" path="res://scenes/arena/arena.gd" id="1_bydfj"]
 [ext_resource type="Texture2D" uid="uid://cy4xfx762bxgb" path="res://assets/sprites/BG.png" id="1_ghuj1"]
 [ext_resource type="Texture2D" uid="uid://ov4fmsbglo55" path="res://assets/sprites/Map.png" id="2_8iili"]
-[ext_resource type="PackedScene" uid="uid://b3xosf2k1sx18" path="res://scenes/players/player_well_rounded.tscn" id="3_8iili"]
-[ext_resource type="Script" uid="uid://d0oddbkjotmgv" path="res://scenes/Arena/camera_2d.gd" id="4_3nare"]
-[ext_resource type="PackedScene" uid="uid://b6hsdntxjua2k" path="res://scenes/enemy/enemy_chaser_slow.tscn" id="6_jlv0v"]
+[ext_resource type="PackedScene" uid="uid://b3xosf2k1sx18" path="res://scenes/unit/players/player_well_rounded.tscn" id="3_8iili"]
+[ext_resource type="Script" uid="uid://d0oddbkjotmgv" path="res://scenes/arena/camera_2d.gd" id="4_3nare"]
+[ext_resource type="PackedScene" uid="uid://b6hsdntxjua2k" path="res://scenes/unit/enemy/enemy_chaser_slow.tscn" id="6_jlv0v"]
 
 [node name="Arena" type="Node2D" node_paths=PackedStringArray("player")]
 script = ExtResource("1_bydfj")

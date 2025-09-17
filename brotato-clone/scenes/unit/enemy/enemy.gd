@@ -7,6 +7,7 @@ class_name Enemy
 
 var can_move := true
 
+
 func _process(delta: float) -> void:
 	if not can_move:
 		return
