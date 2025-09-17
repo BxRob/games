@@ -1,5 +1,8 @@
-res://scenes/enemy/enemy_chaser_slow.tscn
-res://scenes/enemy/enemy.gd
-res://scenes/enemy/enemy_shooter.tscn
-res://scenes/players/player_well_rounded.tscn
 res://scenes/Arena/arena.tscn
+res://scenes/arena/arena.tscn
+res://scenes/unit/enemy/enemy.gd
+res://scenes/hitbox_component.tscn
+res://scenes/components/hitbox_component.tscn
+res://scenes/components/hitbox_component.gd
+res://scenes/components/hurtbox_component.tscn
+res://scenes/components/hurtbox_component.gd

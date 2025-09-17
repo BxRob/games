@@ -1,0 +1,18 @@
+[gd_scene load_steps=5 format=3 uid="uid://b3xosf2k1sx18"]
+
+[ext_resource type="PackedScene" uid="uid://dme6yx2d3s2g2" path="res://scenes/unit/unit.tscn" id="1_iafer"]
+[ext_resource type="Script" uid="uid://dgfjgpdjxcfuy" path="res://scenes/players/player.gd" id="2_tfyga"]
+[ext_resource type="Texture2D" uid="uid://cproxhccob85g" path="res://assets/sprites/Players/Player_1.png" id="2_vltf8"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_tfyga"]
+radius = 28.0179
+
+[node name="PlayerWellRounded" instance=ExtResource("1_iafer")]
+script = ExtResource("2_tfyga")
+
+[node name="Sprite" parent="Visuals" index="1"]
+texture = ExtResource("2_vltf8")
+
+[node name="CollisionShape2D" parent="." index="1"]
+position = Vector2(0, -30)
+shape = SubResource("CircleShape2D_tfyga")
