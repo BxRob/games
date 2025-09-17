@@ -1,6 +1,7 @@
 extends Area2D
 class_name HitboxComponent
 
+signal on_hit_hurtbox(hurtbox: HurtboxComponent)
 
 var damage := 1.0
 var critical := false
@@ -24,3 +25,9 @@ func setup (damage: float, critical: bool, knockback: float, source: Node2D) -> 
 	knockback_power = knockback
 	self.source = source
 	
+
+
+func _on_area_entered(area: Area2D) -> void:
+	if area is HurtboxComponent:
+		on_hit_hurtbox.emit(area)
+		print(area.owner.name)

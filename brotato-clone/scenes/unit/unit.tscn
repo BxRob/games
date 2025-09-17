@@ -1,7 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://dme6yx2d3s2g2"]
+[gd_scene load_steps=10 format=3 uid="uid://dme6yx2d3s2g2"]
 
 [ext_resource type="Texture2D" uid="uid://devt2xbk78rej" path="res://assets/sprites/shadow.png" id="1_k673f"]
 [ext_resource type="Script" uid="uid://cnjfs2cxd2p4t" path="res://scenes/unit/unit.gd" id="1_vh40f"]
+[ext_resource type="PackedScene" uid="uid://dp3xumk1n2wmf" path="res://scenes/components/hurtbox_component.tscn" id="3_vh40f"]
+[ext_resource type="PackedScene" uid="uid://bpcuanowj1v1l" path="res://scenes/components/health_component.tscn" id="4_bhlit"]
 
 [sub_resource type="Animation" id="Animation_tb304"]
 length = 0.001
@@ -247,3 +249,9 @@ libraries = {
 &"": SubResource("AnimationLibrary_tb304")
 }
 autoplay = "idle"
+
+[node name="HurtboxComponent" parent="." instance=ExtResource("3_vh40f")]
+
+[node name="HealthComponent" parent="." instance=ExtResource("4_bhlit")]
+
+[connection signal="on_damaged" from="HurtboxComponent" to="." method="_on_hurtbox_component_on_damaged"]
