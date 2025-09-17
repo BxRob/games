@@ -1,0 +1,19 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1755016268
+broccoli.png::CompressedTexture2D/CompressedTexture2D::2365141829027353840::1754512142::1754512143::1::::<><><>0<>0<>f0f89f6aa06cc57addc9347859cbdb02<>res://.godot/imported/broccoli.png-f5ff0c9b563eae29f256b2c6755fd8d6.ctex::
+broccoli.tscn::PackedScene::5360375316776133068::1754950438::0::1::::<><><>0<>0<><>::uid://iyhqmirgf5nd::::res://food.tscn<>uid://8xxsmw2jh6ga::::res://broccoli.png
+food.gd::GDScript::9131505529161679853::1754950373::0::1::::<>Area2D<><>0<>0<><>::
+food.tscn::PackedScene::611510050272826205::1754950437::0::1::::<><><>0<>0<><>::uid://d3dmtduk280ar::::res://food.gd
+food_spawner.gd::GDScript/GDScript::567324902989226312::1754503486::0::1::::<>Node2D<><>0<>0<><>::
+food_spawner.tscn::PackedScene::8298580566254187747::1754950437::0::1::::<><><>0<>0<><>::uid://ic201s34abwi::::res://food_spawner.gd<>uid://c74nw4yqx84xj::::res://ramen.tscn<>uid://cimuulv30ewd5::::res://broccoli.tscn
+Hot dog baby.mp3::AudioStreamMP3::4970705489984688636::1755016082::1755016083::1::::<><><>0<>0<>87de4fb154d75a235d785d9e5ee0002a<>res://.godot/imported/Hot dog baby.mp3-7d08535f9832f71f3eea1b78d01e68f0.mp3str::
+HotDog.png::CompressedTexture2D::7829454620138725811::1755016268::1755016268::1::::<><><>0<>0<>2d2bb8b6b4ba53718999ff60823c11f1<>res://.godot/imported/HotDog.png-c2854a580a528f5694444e6124d4c02f.ctex::
+hot_dog.tscn::PackedScene::6877841216068156745::1754950438::0::1::::<><><>0<>0<><>::uid://iyhqmirgf5nd::::res://food.tscn
+icon.png::CompressedTexture2D/CompressedTexture2D::8357958493650625778::1754419811::1754419826::1::::<><><>0<>0<>2e30b40aebb71420a71212dcceaeea13<>res://.godot/imported/icon.png-487276ed1e3a0c39cad0279d744ee560.ctex::
+main.tscn::PackedScene::177272499335094159::1754950437::0::1::::<><><>0<>0<><>::uid://biw0hcirdbfxs::::res://player.tscn<>uid://dqh5n6msdvjqh::::res://food_spawner.tscn
+Open Your Mouth.mp3::AudioStreamMP3/AudioStreamMP3::7674636608546600545::1754950403::1754949092::1::::<><><>0<>0<>a45b601f1c1158947eab59cb9cc78bad<>res://.godot/imported/Open Your Mouth.mp3-8ecc287cd7ed6954498ae429882f2d33.mp3str::
+player.gd::GDScript/GDScript::9211458843224705660::1754510360::0::1::::<>CharacterBody2D<><>0<>0<><>::
+player.tscn::PackedScene::2994878286944763788::1754950437::0::1::::<><><>0<>0<><>::uid://drcwmcx28wihe::::res://icon.png<>uid://d4idm73cjfd1e::::res://player.gd
+ramen.png::CompressedTexture2D/CompressedTexture2D::7548228868161449090::1754501063::1754501063::1::::<><><>0<>0<>a59cb28157ded34826e89b9241e10b3f<>res://.godot/imported/ramen.png-87f81154df640e5b96d86be0d2876f71.ctex::
+ramen.tscn::PackedScene::7079581488054337667::1754950466::0::1::::<><><>0<>0<><>::uid://iyhqmirgf5nd::::res://food.tscn<>uid://dfsohyagwk5es::::res://ramen.png<>uid://dhlwe5ct2l2pp::::res://Open Your Mouth.mp3
+sound_manager.gd::GDScript::1459504804303577889::1754949958::0::1::::<>Node<><>0<>0<><>::
