@@ -10,6 +10,10 @@
 [node name="Arena" type="Node2D" node_paths=PackedStringArray("player")]
 script = ExtResource("1_bydfj")
 player = NodePath("PlayerWellRounded")
+normal_color = Color(1, 1, 1, 1)
+blocked_color = Color(1, 0.2901961, 0.45490196, 1)
+critical_color = Color(0.99607843, 0.78039217, 0.38039216, 1)
+hp_color = Color(0, 0.627451, 0.48235294, 1)
 
 [node name="BlackBG" type="Sprite2D" parent="."]
 scale = Vector2(2, 2)
@@ -20,6 +24,7 @@ scale = Vector2(2, 2)
 texture = ExtResource("2_8iili")
 
 [node name="PlayerWellRounded" parent="." instance=ExtResource("3_8iili")]
+position = Vector2(568, 486)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 limit_left = -1050

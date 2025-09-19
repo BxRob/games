@@ -38,11 +38,11 @@ func update_rotation() -> void:
 	
 	var player_pos := Global.player.global_position
 	var moving_right := global_position.x < player_pos.x
-	#visuals.scale = Vector2(-0.5, 0.5) if moving_right else Vector2(0.5, 0.5)
-	if moving_right:
-		sprite.flip_h = true
-	else:
-		sprite.flip_h = false
+	visuals.scale = Vector2(-0.5, 0.5) if moving_right else Vector2(0.5, 0.5)
+	#if moving_right:
+		#sprite.flip_h = true
+	#else:
+		#sprite.flip_h = false
 
 
 func can_move_towards_player() -> bool:

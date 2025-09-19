@@ -47,3 +47,7 @@ position = Vector2(0, -30)
 scale = Vector2(3.0799997, 3.0799997)
 shape = SubResource("CircleShape2D_e15k4")
 debug_color = Color(0.9516787, 1.92523e-07, 0.5648919, 0.41960785)
+
+[node name="HealthBar" parent="." index="7"]
+back_color = Color(0.015686275, 0.05490196, 0.16862746, 1)
+fill_color = Color(0.37254903, 0.5372549, 0.75686276, 1)

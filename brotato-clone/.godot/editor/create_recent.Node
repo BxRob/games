@@ -1,3 +1,7 @@
+Label
+Timer
+ProgressBar
+Control
 Node
 CollisionShape2D
 Area2D

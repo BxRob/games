@@ -32,8 +32,8 @@ func _process(delta: float) -> void:
 		current_velocity = move_dir * stats.speed
 	
 	position += current_velocity * delta
-	position.x = clamp(position.x, -1000, 1000)
-	position.y = clamp(position.y, -500, 500)
+	position.x = clamp(position.x, -990, 990)
+	position.y = clamp(position.y, -440, 490)
 	
 	if can_dash():
 		start_dash()
@@ -54,11 +54,11 @@ func update_rotation() -> void:
 		return
 
 	if move_dir.x >= 0.1:
-		#visuals.scale = Vector2(-0.5, 0.5)
-		sprite.flip_h = true
+		visuals.scale = Vector2(-0.5, 0.5)
+		#sprite.flip_h = true
 	else:
-		#visuals.scale = Vector2(0.5, 0.5)
-		sprite.flip_h = false
+		visuals.scale = Vector2(0.5, 0.5)
+		#sprite.flip_h = false
 
 
 func start_dash() -> void:
