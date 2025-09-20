@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://cimuulv30ewd5"]
+
+[ext_resource type="PackedScene" uid="uid://iyhqmirgf5nd" path="res://food.tscn" id="1_vrekp"]
+[ext_resource type="Texture2D" uid="uid://8xxsmw2jh6ga" path="res://broccoli.png" id="2_mhkwh"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_mhkwh"]
+radius = 96.0833
+
+[node name="Broccoli" instance=ExtResource("1_vrekp")]
+scale = Vector2(0.25, 0.25)
+food_type = "good"
+
+[node name="Sprite2D" parent="." index="0"]
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("2_mhkwh")
+
+[node name="CollisionShape2D" parent="." index="1"]
+scale = Vector2(0.25, 0.25)
+shape = SubResource("CircleShape2D_mhkwh")
