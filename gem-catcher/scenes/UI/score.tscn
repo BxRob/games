@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://3sqi3t6me1od"]
+
+[ext_resource type="Script" uid="uid://x11trnw5l0m6" path="res://scenes/UI/score.gd" id="1_debby"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_65i5o"]
+font_size = 26
+
+[node name="Score" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 165.0
+offset_bottom = 48.0
+script = ExtResource("1_debby")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "000"
+label_settings = SubResource("LabelSettings_65i5o")
+horizontal_alignment = 1
+vertical_alignment = 1

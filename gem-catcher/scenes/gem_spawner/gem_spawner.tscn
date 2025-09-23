@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://caqjiuaqsrfhs"]
+
+[ext_resource type="Script" uid="uid://coyn3t8eitoci" path="res://scenes/gem_spawner/gem_spawner.gd" id="1_qyf1g"]
+[ext_resource type="PackedScene" uid="uid://c8rvidtcohpno" path="res://scenes/gem/gem.tscn" id="2_g6nlf"]
+
+[node name="GemSpawner" type="Node2D"]
+script = ExtResource("1_qyf1g")
+gem_scene = ExtResource("2_g6nlf")
+spawn_interval = null
+
+[node name="Timer" type="Timer" parent="."]

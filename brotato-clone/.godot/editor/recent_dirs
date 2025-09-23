@@ -1,3 +1,6 @@
+res://scenes/unit/players
+res://scenes/weapons/melee
+res://scenes/weapons
 res://resources/items/weapons/melee/punch
 res://scenes/ui/floating_text
 res://effects
@@ -5,6 +8,5 @@ res://assets/font
 res://scenes/ui
 res://scenes/components
 res://scenes/unit/enemy
-res://scenes/unit/players
 res://scenes
 res://assets/sprites/Players

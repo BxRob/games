@@ -1,5 +1,5 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1758409152
+::res://::1758410978
 broccoli.png::CompressedTexture2D::2365141829027353840::1758409102::1758409154::1::::<><><>0<>0<>ea5c5bdaa22ecf850fedacd51fc6758a<>res://.godot/imported/broccoli.png-f5ff0c9b563eae29f256b2c6755fd8d6.ctex::
 broccoli.tscn::PackedScene::5360375316776133068::1758409102::0::1::::<><><>0<>0<><>::uid://iyhqmirgf5nd::::res://food.tscn<>uid://8xxsmw2jh6ga::::res://broccoli.png
 food.gd::GDScript::9131505529161679853::1758409102::0::1::::<>Area2D<><>0<>0<><>::

@@ -9,6 +9,9 @@ class_name Player
 @onready var dash_cooldown_timer: Timer = $DashCooldownTimer
 @onready var collision: CollisionShape2D = $CollisionShape2D
 @onready var trail = %Trail
+@onready var weapon_container: WeaponContainer = $WeaponContainer
+
+var current_weapons: Array[Weapon] = []
 
 var move_dir: Vector2
 var dash_dir: Vector2 = Vector2.ZERO
@@ -20,6 +23,9 @@ func _ready():
 	super._ready()
 	dash_timer.wait_time = dash_duration
 	dash_cooldown_timer.wait_time = dash_cooldown
+	
+	add_weapon(preload("uid://bxpumvy00babu"))
+	add_weapon(preload("uid://bxpumvy00babu"))
 
 
 func _process(delta: float) -> void:
@@ -40,6 +46,15 @@ func _process(delta: float) -> void:
 	
 	update_animations()
 	update_rotation()
+
+
+func add_weapon(data: ItemWeapon) -> void:
+	var weapon := data.scene.instantiate() as Weapon
+	add_child(weapon)
+	
+	weapon.setup_weapon(data)
+	current_weapons.append(weapon)
+	weapon_container.update_weapons_position(current_weapons)
 
 
 func update_animations() -> void:
