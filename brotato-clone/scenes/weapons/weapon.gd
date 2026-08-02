@@ -23,7 +23,15 @@ func setup_weapon(data: ItemWeapon) -> void:
 	collision.shape.radius = data.stats.max_range
 
 
+func get_idle_rotation() -> float:
+	if Global.player.is_facing_right():
+		return 0
+	else:
+		return PI
 
+
+func update_closest_target() -> void:
+	closest_target = get_closest_target()
 
 
 func get_closest_target() -> Node2D:
