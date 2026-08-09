@@ -1,2 +1,6 @@
-TileMapLayer
+AudioStreamPlayer2D
+Camera2D
+CollisionShape2D
 Sprite2D
+CharacterBody2D
+TileMapLayer
