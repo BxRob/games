@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://dmend6xs236ak"]
+
+[ext_resource type="Script" uid="uid://blq36i02j4m3f" path="res://scenes/aim_arrow/aim_arrow.gd" id="1_1gt6a"]
+
+[node name="AimArrow" type="Node2D" unique_id=416000352]
+script = ExtResource("1_1gt6a")
