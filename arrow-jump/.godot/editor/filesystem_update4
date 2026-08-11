@@ -1,4 +1,2 @@
 res://scenes/level_base/level_base.tscn
 res://resources/tiles.tres
-res://scenes/player/player.tscn
-res://scenes/player/player.gd
