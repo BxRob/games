@@ -4,7 +4,7 @@ extends CharacterBody2D
 const GRAVITY: float = 690
 const RUN_SPEED: float = 100
 const JUMP_CHARGE_SPEED := 1000.0
-const MAX_JUMP_POWER := 1000.0
+const MAX_JUMP_POWER := 400.0
 
 var jump_charge := 0.0
 var _was_on_floor: bool = false
