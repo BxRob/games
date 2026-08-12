@@ -1,5 +1,5 @@
 78098b89c88a74ebe8c20117b8754620
-::res://::1786491288
+::res://::1786548766
 icon.svg::CompressedTexture2D::5004892831581340111::1786472312::1786472320::1::::<><><>0<>0<>c11c1d3b3f09601be33adc4ef8b180d3<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 ::res://assets/::1786472313
 links.txt::TextFile::-1::1786472313::0::1::::<><><>0<>0<><>::
@@ -105,8 +105,8 @@ pixel_platformer.png::CompressedTexture2D::6314773731196159725::1786472313::1786
 game_manager.gd::GDScript::6770945500285559143::1786472313::0::1::::<>Node<><>0<>0<><>::
 score_manager.gd::GDScript::4195574745067723171::1786472313::0::1::::<>Node<><>0<>0<><>::
 signal_hub.gd::GDScript::750576218265357380::1786472313::0::1::::<>Node<><>0<>0<><>::
-::res://resources/::1786483121
-tiles.tres::TileSet::2356135963410024122::1786483121::0::1::::<><><>0<>0<><>::uid://cv76nvjgn7eth::::res://assets/tiles/pixel_platformer.png
+::res://resources/::1786491311
+tiles.tres::TileSet::2356135963410024122::1786491311::0::1::::<><><>0<>0<><>::uid://cv76nvjgn7eth::::res://assets/tiles/pixel_platformer.png
 ::res://scenes/::1786472399
 ::res://scenes/aim_arrow/::1786472422
 aim_arrow.gd::GDScript::3193283903231776133::1786472422::0::1::::<>Node2D<><>0<>0<><>::
@@ -117,8 +117,8 @@ game_hud.tscn::PackedScene::5146146563888407521::1786472313::0::1::::<><><>0<>0<
 ::res://scenes/killzone/::1786472313
 kill_zone.gd::GDScript::1747214737045705590::1786472313::0::1::::<>Area2D<><>0<>0<><>::
 kill_zone.tscn::PackedScene::5326780719833846344::1786472313::0::1::::<><><>0<>0<><>::uid://y5mmvnnfxtfy::::res://scenes/killzone/kill_zone.gd
-::res://scenes/level_base/::1786488216
-level_base.tscn::PackedScene::171515304482010273::1786488216::0::1::::<><><>0<>0<><>::uid://cfk3jubr8nsjp::::res://scenes/game_hud/game_hud.tscn<>uid://38nmxidaqdhg::::res://assets/backgrounds/Cartoon-forest-game-backgrounds/PNG/Cartoon_Forest_BG_04/Cartoon_Forest_BG_04.png<>uid://8tlhkvtjjfqo::::res://resources/tiles.tres<>uid://b5gn6fgycf8of::::res://scenes/player/player.tscn<>uid://ch5lkhbgooo7a::::res://scenes/killzone/kill_zone.tscn
+::res://scenes/level_base/::1786491326
+level_base.tscn::PackedScene::171515304482010273::1786491326::0::1::::<><><>0<>0<><>::uid://cfk3jubr8nsjp::::res://scenes/game_hud/game_hud.tscn<>uid://38nmxidaqdhg::::res://assets/backgrounds/Cartoon-forest-game-backgrounds/PNG/Cartoon_Forest_BG_04/Cartoon_Forest_BG_04.png<>uid://8tlhkvtjjfqo::::res://resources/tiles.tres<>uid://b5gn6fgycf8of::::res://scenes/player/player.tscn<>uid://ch5lkhbgooo7a::::res://scenes/killzone/kill_zone.tscn
 ::res://scenes/main/::1786472313
 main.gd::GDScript::2482671605041324240::1786472313::0::1::::<>Control<><>0<>0<><>::
 main.tscn::PackedScene::1609758229276116496::1786472313::0::1::::<><><>0<>0<><>::uid://bbmvid3obdmm7::::res://scenes/main/main.gd<>uid://dneel5ip6l2i4::::res://assets/font/TitanOne-Regular.ttf

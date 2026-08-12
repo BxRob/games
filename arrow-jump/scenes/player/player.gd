@@ -5,6 +5,7 @@ const GRAVITY: float = 690
 const RUN_SPEED: float = 100
 const JUMP_CHARGE_SPEED := 1000.0
 const MAX_JUMP_POWER := 400.0
+const WALL_BOUNCE_SPEED := 100.0
 
 var jump_charge := 0.0
 var _was_on_floor: bool = false
@@ -24,6 +25,7 @@ func _physics_process(delta: float) -> void:
 	handle_movement()
 	flip_sprite()
 	move_and_slide()
+	handle_wall_bounce()
 	check_landed()
 
 
@@ -66,3 +68,10 @@ func check_landed() -> void:
 func fell_off() -> void:
 	position = _start_position
 	set_position.call_deferred(_start_position)
+
+
+func handle_wall_bounce() -> void:
+	if is_on_wall() and not is_on_floor():
+		var wall_normal = get_wall_normal()
+
+		velocity.x = wall_normal.x * WALL_BOUNCE_SPEED
