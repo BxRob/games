@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://cqow47bch5ocs"]
+
+[ext_resource type="PackedScene" uid="uid://be8qbmt0fe144" path="res://scenes/Player.tscn" id="1_o5qli"]
+[ext_resource type="PackedScene" uid="uid://od8sbrp8tpys" path="res://scenes/test_enemy.tscn" id="2_0wfyh"]
+
+[node name="Main" type="Node2D" unique_id=478215538]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1671654630]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+offset_transform_enabled = true
+offset_transform_scale = Vector2(28.74, 16.315)
+color = Color(0.33075836, 0.22557986, 0.10541635, 1)
+
+[node name="Player" parent="." unique_id=419091292 instance=ExtResource("1_o5qli")]
+position = Vector2(-490, 194)
+
+[node name="Camera2D" type="Camera2D" parent="Player" unique_id=1606834838]
+limit_left = -600
+limit_top = -375
+limit_right = 600
+limit_bottom = 375
+
+[node name="TestEnemy" parent="." unique_id=421867745 instance=ExtResource("2_0wfyh")]

@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://by6gfd8yaamey"]
+
+[ext_resource type="Script" uid="uid://8y38y1pqqotd" path="res://scripts/manual_weapon.gd" id="1_1trts"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1trts"]
+size = Vector2(90, 30)
+
+[node name="ManualWeapon" type="Node2D" unique_id=444196007]
+script = ExtResource("1_1trts")
+
+[node name="AttackArea" type="Area2D" parent="." unique_id=1764071318]
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AttackArea" unique_id=169780990]
+position = Vector2(45, 0)
+shape = SubResource("RectangleShape2D_1trts")
+
+[connection signal="body_entered" from="AttackArea" to="." method="_on_attack_area_body_entered"]
