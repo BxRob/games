@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://be8qbmt0fe144"]
+
+[ext_resource type="Texture2D" uid="uid://4q335xxs2p" path="res://icon.svg" id="1_p0vlq"]
+[ext_resource type="Script" uid="uid://tyiax266x25r" path="res://scripts/player.gd" id="1_v6fml"]
+[ext_resource type="PackedScene" uid="uid://by6gfd8yaamey" path="res://scenes/manual_weapon.tscn" id="3_3li8b"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_tggc0"]
+radius = 16.0
+
+[node name="Player" type="CharacterBody2D" unique_id=419091292]
+script = ExtResource("1_v6fml")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1928837249]
+scale = Vector2(0.26, 0.26)
+texture = ExtResource("1_p0vlq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1111043267]
+shape = SubResource("CircleShape2D_tggc0")
+
+[node name="ManualWeapon" parent="." unique_id=444196007 instance=ExtResource("3_3li8b")]
