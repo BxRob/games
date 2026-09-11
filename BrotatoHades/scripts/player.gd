@@ -13,13 +13,15 @@ class_name Player
 
 var dash_timer: float = 0.0
 var dash_cooldown_timer: float = 0.0
-var dash_direction: Vector2 = Vector2.ZERO
+var dash_direction: Vector2 = Vector2.RIGHT
+var is_dashing: bool = false
 
 
 func _physics_process(delta: float) -> void:
-	dash_cooldown_timer = max(dash_cooldown_timer - delta, 0.0)
+	if dash_cooldown_timer > 0.0:
+		dash_cooldown_timer = max(dash_cooldown_timer - delta, 0.0)
 
-	if dash_timer > 0.0:
+	if is_dashing:
 		update_dash(delta)
 	else:
 		update_movement(delta)
@@ -27,26 +29,23 @@ func _physics_process(delta: float) -> void:
 	move_and_slide()
 
 
-func update_movement(delta: float) -> void:
-	var input_direction := Input.get_vector(
+func get_input_direction() -> Vector2:
+	return Input.get_vector(
 		"move_left",
 		"move_right",
 		"move_up",
 		"move_down"
 	)
 
+
+func update_movement(delta: float) -> void:
+	var input_direction := get_input_direction()
+
 	if input_direction != Vector2.ZERO:
 		var target_velocity := input_direction * max_speed
-
-		velocity = velocity.move_toward(
-			target_velocity,
-			acceleration * delta
-		)
+		velocity = velocity.move_toward(target_velocity, acceleration * delta)
 	else:
-		velocity = velocity.move_toward(
-			Vector2.ZERO,
-			deceleration * delta
-		)
+		velocity = velocity.move_toward(Vector2.ZERO, deceleration * delta)
 
 	if Input.is_action_just_pressed("dash") and dash_cooldown_timer <= 0.0:
 		start_dash(input_direction)
@@ -57,17 +56,19 @@ func start_dash(input_direction: Vector2) -> void:
 		input_direction = velocity.normalized()
 
 	if input_direction == Vector2.ZERO:
-		input_direction = Vector2.RIGHT
+		input_direction = dash_direction if dash_direction != Vector2.ZERO else Vector2.RIGHT
 
 	dash_direction = input_direction.normalized()
-
 	dash_timer = dash_duration
 	dash_cooldown_timer = dash_cooldown
-
+	is_dashing = true
 	velocity = dash_direction * dash_speed
 
 
 func update_dash(delta: float) -> void:
 	dash_timer -= delta
-
 	velocity = dash_direction * dash_speed
+
+	if dash_timer <= 0.0:
+		dash_timer = 0.0
+		is_dashing = false
