@@ -11,10 +11,21 @@ class_name Player
 @export var dash_duration: float = 0.12
 @export var dash_cooldown: float = 0.5
 
+@export_category("Power Up")
+@export var speed_gain_per_power: float = 8.0
+@export var damage_gain_per_power: float = 4.0
+@export var cooldown_reduction_per_power: float = 0.01
+@export var min_attack_cooldown: float = 0.1
+
 var dash_timer: float = 0.0
 var dash_cooldown_timer: float = 0.0
 var dash_direction: Vector2 = Vector2.RIGHT
 var is_dashing: bool = false
+var power_level: int = 0
+
+
+func _ready() -> void:
+	add_to_group("player")
 
 
 func _physics_process(delta: float) -> void:
@@ -72,3 +83,20 @@ func update_dash(delta: float) -> void:
 	if dash_timer <= 0.0:
 		dash_timer = 0.0
 		is_dashing = false
+
+
+func add_power(amount: float) -> void:
+	power_level += 1
+
+	max_speed += speed_gain_per_power * amount
+
+	var weapon := get_node_or_null("ManualWeapon")
+
+	if weapon:
+		weapon.attack_damage += damage_gain_per_power * amount
+		weapon.attack_cooldown = max(
+			weapon.attack_cooldown - cooldown_reduction_per_power * amount,
+			min_attack_cooldown
+		)
+
+	print("Player power level: ", power_level)

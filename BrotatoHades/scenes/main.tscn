@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://be8qbmt0fe144" path="res://scenes/Player.tscn" id="1_o5qli"]
 [ext_resource type="PackedScene" uid="uid://od8sbrp8tpys" path="res://scenes/test_enemy.tscn" id="2_0wfyh"]
+[ext_resource type="Script" path="res://scripts/enemy_spawner.gd" id="3_spawner"]
 
 [node name="Main" type="Node2D" unique_id=478215538]
 
@@ -32,3 +33,7 @@ limit_right = 600
 limit_bottom = 375
 
 [node name="TestEnemy" parent="." unique_id=421867745 instance=ExtResource("2_0wfyh")]
+
+[node name="EnemySpawner" type="Node2D" parent="."]
+script = ExtResource("3_spawner")
+enemy_scene = ExtResource("2_0wfyh")
